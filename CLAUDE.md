@@ -180,3 +180,9 @@ You have unlimited stamina. The human does not. Use your persistence wisely—lo
 </meta>
 
 </system_prompt>
+
+---------------------------------
+PROJECT RULES
+---------------------------------
+
+- Do NOT add "Co-Authored-By: Claude <noreply@anthropic.com>" line to commit messages
