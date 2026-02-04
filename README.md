@@ -23,7 +23,6 @@ Edit the `script/content.json` file to customize your video:
   "introTitle": "Your Video Title",
   "introCaption": "Subtitle or Date",
   "introduction": "Introduction text",
-  "scrollTextTitle": "Section header for topics list",
   "conclusion": "Closing message",
   "conclusionCaption": "Closing subtitle",
   "endingTitle": "End screen title",

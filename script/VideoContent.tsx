@@ -9,7 +9,6 @@ export const videoFormat: VideoFormat = content.videoFormat || "reels";
 export const IntroTitle = content.introTitle;
 export const IntroCaption = content.introCaption;
 export const Introduction = content.introduction;
-export const ScrollTextTitle = content.scrollTextTitle;
 export const Conclusion = content.conclusion;
 export const ConclusionCaption = content.conclusionCaption;
 export const EndingTitle = content.endingTitle;
