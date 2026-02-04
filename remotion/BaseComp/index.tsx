@@ -174,15 +174,6 @@ const BaseComp = ({
         ))}
 
         <Series.Sequence
-          durationInFrames={fps * 5}
-          offset={-30}
-          className="z-0"
-          name={"Scrolling all things changed list"}
-        >
-          <AllThingsWeAddedSequence list={allChanges} />
-        </Series.Sequence>
-
-        <Series.Sequence
           durationInFrames={fps * 3}
           offset={-30}
           className="z-0"
@@ -205,7 +196,7 @@ const BaseComp = ({
         </Series.Sequence>
 
         <Series.Sequence
-          durationInFrames={fps * 6}
+          durationInFrames={fps * 4}
           offset={-20}
           className="text-black"
           name={"enhance42"}
