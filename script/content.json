@@ -17,36 +17,8 @@
       "description": "Principles that systematically guide the development of higher-quality code through continued practice."
     },
     {
-      "title": "Code Understanding AI Prompt Template",
-      "description": "Template to use to understand any block of code using AI."
-    },
-    {
       "title": "Profile Website Creation",
       "description": "Using HTML tags and GitHub Pages."
-    },
-    {
-      "title": "Linux Basic Commands",
-      "description": "Basic commands and usage of the command line interface."
-    },
-    {
-      "title": "Contact QR Code Generator",
-      "description": "Generate your contact QR code using Python script."
-    },
-    {
-      "title": "Python Programming Basics",
-      "description": "I/O, Control Flow"
-    },
-    {
-      "title": "Python Debugging",
-      "description": "Debugging Python code using 'pdb' in command line."
-    },
-    {
-      "title": "AI Tools",
-      "description": "suno.com, NotebookLM, elevenlabs, claude, gamma.app"
-    },
-    {
-      "title": "System Internals",
-      "description": "Understanding how systems work under the hood."
     },
     {
       "title": "Web APIs",
