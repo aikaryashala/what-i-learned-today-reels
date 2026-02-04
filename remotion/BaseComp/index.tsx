@@ -205,7 +205,7 @@ const BaseComp = ({
         </Series.Sequence>
 
         <Series.Sequence
-          durationInFrames={fps * 3}
+          durationInFrames={fps * 6}
           offset={-20}
           className="text-black"
           name={"enhance42"}

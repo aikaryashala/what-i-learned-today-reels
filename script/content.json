@@ -1,7 +1,7 @@
 {
   "introTitle": "Bootcamp by AI Karyashala",
   "introCaption": "Feb 7th-8th, 2026",
-  "introduction": "The hands on activites...",
+  "introduction": "The hands-on activites...",
   "scrollTextTitle": "Here's all the topics that will be covered!",
   "conclusion": "Waiting for the first session",
   "conclusionCaption": "on Feb 7th 2026",
@@ -17,23 +17,19 @@
     },
     {
       "title": "Code Understanding AI Prompt Template",
-      "description": "Template to use to understand any peice of code using AI."
-    },
-    {
-      "title": "AI Tools",
-      "description": "suno.com, notebookLM, elevenlabs, claude, gamma.app"
+      "description": "Template to use to understand any block of code using AI."
     },
     {
       "title": "Profile Website Creation",
-      "description": "Using HTML tags and Github Pages."
+      "description": "Using HTML tags and GitHub Pages."
     },
     {
-      "title": "Linux Basic Command",
+      "title": "Linux Basic Commands",
       "description": "Basic commands and usage of the command line interface."
     },
     {
       "title": "Contact QR Code Generator",
-      "description": "Generate your contact QR code using python script."
+      "description": "Generate your contact QR code using Python script."
     },
     {
       "title": "Python Programming Basics",
@@ -42,6 +38,10 @@
     {
       "title": "Python Debugging",
       "description": "Debugging Python code using 'pdb' in command line."
+    },
+    {
+      "title": "AI Tools",
+      "description": "suno.com, NotebookLM, elevenlabs, claude, gamma.app"
     },
     {
       "title": "System Internals",
