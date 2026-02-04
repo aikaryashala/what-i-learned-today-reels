@@ -6,7 +6,7 @@ import {
   Easing,
 } from "remotion";
 
-export default function ScrollingTextList({ list }: { list: string[] }) {
+export default function ScrollingTextList({ list, title }: { list: string[], title?: string }) {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -42,6 +42,11 @@ export default function ScrollingTextList({ list }: { list: string[] }) {
         }),
       }}
     >
+      {title && (
+        <div className="text-center w-full text-4xl font-black text-white mb-16">
+          {title}
+        </div>
+      )}
       {list.map((listItem, i) => (
         <div
           key={i}
