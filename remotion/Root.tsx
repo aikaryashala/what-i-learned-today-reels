@@ -50,8 +50,8 @@ export default function Comp() {
         // durationInFrames={30 * 4}
         durationInFrames={durationInFrames}
         fps={30}
-        width={2160}
-        height={1080}
+        width={1080}
+        height={1350}
         id="basecomp"
         defaultProps={{
           repositorySlug: "Checking", // unused data
