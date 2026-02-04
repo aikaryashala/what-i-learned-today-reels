@@ -7,7 +7,8 @@ export const ConclusionCaption = "on June 5th 2023" ;
 export const EndingTitle = "Coding Bridge Course" ;
 export const EndingCaption = "June 5th 2023" ;
 
-export const BackgroundMusic = "https://audiocdn.epidemicsound.com/ES_ITUNES/Zy0ALC_Ganja/ES_Ganja.mp3" ;
+import { staticFile } from "remotion";
+export const BackgroundMusic = staticFile("sankranthi.mp3"); 
 
 const Content = `topChanges:
 - title: Open https://bridge.e42.dev
