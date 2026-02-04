@@ -1,24 +1,67 @@
 # To make class summary videos
 
 ## Steps to first configure on dev machine
-1. Install the `remotion` using the command.
+
+1. Install the needed packages
 ```
-npm init video
+pnpm install
 ```
 
-2. Install the needed packages
+2. To generate the video
 ```
-npm install
-```
-
-3. To generate the video
-```
-npm run render
+pnpm render
 ```
 
 You can see the video in the `out` folder.
 
-4. Now just change the content in file `videoContent.tsx` inside `script` folder to generate the necessary video. In this file all the confirations like backgroud music everything can be decided. Going forward just changing this one file content must generate the necessary video.
+## How to use:
+
+Edit the `script/content.json` file to customize your video:
+
+```json
+{
+  "introTitle": "Your Video Title",
+  "introCaption": "Subtitle or Date",
+  "introduction": "Introduction text",
+  "scrollTextTitle": "Section header for topics list",
+  "conclusion": "Closing message",
+  "conclusionCaption": "Closing subtitle",
+  "endingTitle": "End screen title",
+  "endingCaption": "End screen subtitle",
+
+  "backgroundMusic": "your-audio.mp3",
+
+  "topChanges": [
+    { "title": "Topic 1", "description": "Description of topic 1" },
+    { "title": "Topic 2", "description": "Description of topic 2" },
+    { "title": "Topic 3", "description": "Description of topic 3" }
+  ],
+
+  "allChanges": [
+    "List item 1",
+    "List item 2",
+    "List item 3"
+  ]
+}
+```
+
+### Configuration details:
+
+| Field | Description |
+|-------|-------------|
+| `introTitle` | Main title shown at video start |
+| `introCaption` | Subtitle shown below intro title |
+| `introduction` | Text before main content |
+| `topChanges` | Featured items (each gets its own animated slide) |
+| `allChanges` | Scrolling list of all items |
+| `backgroundMusic` | Audio file name (place in `public/` folder) |
+| `conclusion` | Closing message |
+| `endingTitle` | Final screen title |
+
+### Notes:
+- Adding more items to `topChanges` automatically increases video length
+- Place audio files in the `public/` folder
+- Run `pnpm render` after editing to generate the video
 
 
 

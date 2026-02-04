@@ -1,39 +1,28 @@
-export const IntroTitle = "Coding Bridge Course" ;
-export const IntroCaption = "June 5th 2023" ;
-export const Introduction = "Your first 3 steps" ;
-export const ScrollTextTitle = "Here's all the topics that will be covered!" ;
-export const Conclusion = "Waiting for the first class" ;
-export const ConclusionCaption = "on June 5th 2023" ;
-export const EndingTitle = "Coding Bridge Course" ;
-export const EndingCaption = "June 5th 2023" ;
-
 import { staticFile } from "remotion";
-export const BackgroundMusic = staticFile("sankranthi.mp3"); 
+import content from "./content.json";
 
+// Text content - read from JSON
+export const IntroTitle = content.introTitle;
+export const IntroCaption = content.introCaption;
+export const Introduction = content.introduction;
+export const ScrollTextTitle = content.scrollTextTitle;
+export const Conclusion = content.conclusion;
+export const ConclusionCaption = content.conclusionCaption;
+export const EndingTitle = content.endingTitle;
+export const EndingCaption = content.endingCaption;
+
+// Audio - uses staticFile for local files in public/
+export const BackgroundMusic = staticFile(content.backgroundMusic);
+
+// Structured content for video sequences
+export const topChanges = content.topChanges;
+export const allChanges = content.allChanges;
+
+// For backward compatibility with Root.tsx YAML parsing
 const Content = `topChanges:
-- title: Open https://bridge.e42.dev
-  description: Open our course website
-- title: Type command 'code'
-  description: To open the replit website
-- title: Now signup using google account
-  description: create replit account
+${content.topChanges.map(c => `- title: ${c.title}\n  description: ${c.description}`).join('\n')}
 
 allChanges:
-- Using the commands
-- Creating new commands
-- Variable
-- function parameters
-- function returns sankya or gadidha_guddu
-- main function, from which everything starts. Return program_execution_status.
-- Control flow
-- Data Flow
-- function, declaration, definition, calling. // new commands
-- control statements, if-else, while, for, break
-- Arithmetic operations, assignment.
-- relational operators
-- Errors.
-- Compiler, code, executable.
-- Header files, distribution of code.
-- Reading from user`
+${content.allChanges.map(c => `- ${c}`).join('\n')}`;
 
-export default Content ;
+export default Content;

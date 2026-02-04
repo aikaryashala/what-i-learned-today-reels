@@ -1,0 +1,46 @@
+{
+  "introTitle": "Coding Bridge Course",
+  "introCaption": "June 5th 2023",
+  "introduction": "Your first 3 steps",
+  "scrollTextTitle": "Here's all the topics that will be covered!",
+  "conclusion": "Waiting for the first class",
+  "conclusionCaption": "on June 5th 2023",
+  "endingTitle": "Coding Bridge Course",
+  "endingCaption": "June 5th 2023",
+
+  "backgroundMusic": "sankranthi.mp3",
+
+  "topChanges": [
+    {
+      "title": "Open https://bridge.e42.dev",
+      "description": "Open our course website"
+    },
+    {
+      "title": "Type command 'code'",
+      "description": "To open the replit website"
+    },
+    {
+      "title": "Now signup using google account",
+      "description": "create replit account"
+    }
+  ],
+
+  "allChanges": [
+    "Using the commands",
+    "Creating new commands",
+    "Variable",
+    "function parameters",
+    "function returns sankya or gadidha_guddu",
+    "main function, from which everything starts. Return program_execution_status.",
+    "Control flow",
+    "Data Flow",
+    "function, declaration, definition, calling. // new commands",
+    "control statements, if-else, while, for, break",
+    "Arithmetic operations, assignment.",
+    "relational operators",
+    "Errors.",
+    "Compiler, code, executable.",
+    "Header files, distribution of code.",
+    "Reading from user"
+  ]
+}
