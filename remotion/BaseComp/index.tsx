@@ -65,7 +65,7 @@ const BaseComp = ({
           name="enhance42"
         > {/* name is not used */}
           <SlidingDoors>
-            <First className="bg-black">
+            <First className="bg-black text-center">
               <h1 className="text-9xl font-black">{IntroTitle}</h1>
             </First>
           </SlidingDoors>
@@ -78,7 +78,7 @@ const BaseComp = ({
           name={"13.4.2"}
         > {/* name is not used */}
           <SlidingDoors>
-            <First className="bg-blue-500">
+            <First className="bg-blue-500 text-center">
               <h1 className="text-9xl font-black">{IntroCaption}</h1>
             </First>
           </SlidingDoors>

@@ -22,7 +22,7 @@ export default function ScrollingTextList({ list, title }: { list: string[], tit
       },
     }),
     [0, 1],
-    [0, -85],
+    [0, -50],
     {
       easing: Easing.bezier(0.5, 0.01, 0, 1),
     }
@@ -43,14 +43,14 @@ export default function ScrollingTextList({ list, title }: { list: string[], tit
       }}
     >
       {title && (
-        <div className="text-center w-full text-4xl font-black text-white mb-16">
+        <div className="text-center w-full text-6xl font-black text-white mb-16">
           {title}
         </div>
       )}
       {list.map((listItem, i) => (
         <div
           key={i}
-          className="text-left w-full text-3xl font-medium text-gray-300 mt-10"
+          className="text-left w-full text-5xl font-medium text-gray-300 mt-10"
         >
           {listItem}
         </div>
