@@ -20,7 +20,7 @@ export default function Comp() {
       inputProps.Content ?? Content
     ) as unknown as ParsedPropsSchema;
 
-    const duration = 81 * parsed.topChanges.length + 555;
+    const duration = 81 * parsed.topChanges.length + 705;
 
     setDurationInFrames(duration);
 
