@@ -63,6 +63,16 @@ Edit the `script/content.json` file to customize your video:
 - Place audio files in the `public/` folder
 - Run `pnpm render` after editing to generate the video
 
+### Supported Video Sizes:
+
+Change dimensions in `remotion/Root.tsx` (width and height values).
+
+| Video Size | Dimensions | Aspect Ratio | Use Case |
+|------------|------------|--------------|----------|
+| Landscape HD | 2160×1080 | 2:1 | YouTube, presentations |
+| Instagram Portrait | 1080×1350 | 4:5 | Instagram posts |
+| Reels/Shorts | 1080×1920 | 9:16 | Instagram Reels, YouTube Shorts, TikTok |
+
 
 
 https://github.com/rohinibarla/Relano/assets/18045055/9d6a4fba-3dc2-4bf1-a49a-6a660b7ad165
