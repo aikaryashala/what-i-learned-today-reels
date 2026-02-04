@@ -3,7 +3,7 @@ import content from "./content.json";
 
 // Video format configuration
 export type VideoFormat = "landscape" | "instagram" | "reels";
-export const videoFormat = content.videoFormat as VideoFormat;
+export const videoFormat: VideoFormat = content.videoFormat || "reels";
 
 // Text content - read from JSON
 export const IntroTitle = content.introTitle;
