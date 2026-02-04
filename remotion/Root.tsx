@@ -5,7 +5,15 @@ import {
   continueRender,
 } from "remotion";
 
-import Content from "../script/VideoContent";
+import Content, { videoFormat } from "../script/VideoContent";
+
+const VIDEO_DIMENSIONS = {
+  landscape: { width: 2160, height: 1080 },
+  instagram: { width: 1080, height: 1350 },
+  reels: { width: 1080, height: 1920 },
+} as const;
+
+const { width, height } = VIDEO_DIMENSIONS[videoFormat];
 import BaseComp, { ParsedPropsSchema, BaseCompProps } from "./BaseComp";
 import { useMemo, useState } from "react";
 import { parse } from "yaml";
@@ -50,8 +58,8 @@ export default function Comp() {
         // durationInFrames={30 * 4}
         durationInFrames={durationInFrames}
         fps={30}
-        width={1080}
-        height={1920}
+        width={width}
+        height={height}
         id="basecomp"
         defaultProps={{
           repositorySlug: "Checking", // unused data

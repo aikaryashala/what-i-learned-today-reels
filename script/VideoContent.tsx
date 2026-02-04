@@ -1,6 +1,10 @@
 import { staticFile } from "remotion";
 import content from "./content.json";
 
+// Video format configuration
+export type VideoFormat = "landscape" | "instagram" | "reels";
+export const videoFormat = content.videoFormat as VideoFormat;
+
 // Text content - read from JSON
 export const IntroTitle = content.introTitle;
 export const IntroCaption = content.introCaption;

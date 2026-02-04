@@ -14,7 +14,7 @@ export default function SlideInContentFromBottomWithGridSequence({
   ...props
 }: HTMLAttributes<HTMLDivElement> & { children?: ReactNode }) {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
   const childrenSizeSpring = spring({
     frame: frame + 10,
     fps,
@@ -28,7 +28,7 @@ export default function SlideInContentFromBottomWithGridSequence({
       className={cn("items-center justify-center", props.className)}
     >
       <div style={{ transform: `scale(${childrenSize})` }}>{children}</div>
-      <GridPatternSvg className="absolute inset-0" />
+      <GridPatternSvg className="absolute inset-0" videoWidth={width} videoHeight={height} />
     </AbsoluteFill>
   );
 }

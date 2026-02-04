@@ -1,8 +1,18 @@
 import * as React from "react";
 
-function GridPattern(props: React.SVGProps<SVGSVGElement>) {
+const SCALE_FACTOR = 3.75; // Maintains consistent cell size across all video formats
+
+interface GridPatternProps extends React.SVGProps<SVGSVGElement> {
+  videoWidth: number;
+  videoHeight: number;
+}
+
+function GridPattern({ videoWidth, videoHeight, ...props }: GridPatternProps) {
+  const viewBoxWidth = Math.ceil(videoWidth / SCALE_FACTOR);
+  const viewBoxHeight = Math.ceil(videoHeight / SCALE_FACTOR);
+
   return (
-    <svg viewBox="0 0 288 512" fill="none" {...props}>
+    <svg viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`} fill="none" {...props}>
       {/* Original pattern (rows 1-4) */}
       <g>
         

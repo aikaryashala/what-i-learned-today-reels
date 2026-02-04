@@ -49,6 +49,7 @@ Edit the `script/content.json` file to customize your video:
 
 | Field | Description |
 |-------|-------------|
+| `videoFormat` | Video dimensions: `"landscape"`, `"instagram"`, or `"reels"` |
 | `introTitle` | Main title shown at video start |
 | `introCaption` | Subtitle shown below intro title |
 | `introduction` | Text before main content |
@@ -63,15 +64,23 @@ Edit the `script/content.json` file to customize your video:
 - Place audio files in the `public/` folder
 - Run `pnpm render` after editing to generate the video
 
-### Supported Video Sizes:
+### Supported Video Formats:
 
-Change dimensions in `remotion/Root.tsx` (width and height values).
+Set `videoFormat` in `content.json` to one of these values:
 
-| Video Size | Dimensions | Aspect Ratio | Use Case |
-|------------|------------|--------------|----------|
-| Landscape HD | 2160×1080 | 2:1 | YouTube, presentations |
-| Instagram Portrait | 1080×1350 | 4:5 | Instagram posts |
-| Reels/Shorts | 1080×1920 | 9:16 | Instagram Reels, YouTube Shorts, TikTok |
+| Format | Value | Dimensions | Aspect Ratio | Use Case |
+|--------|-------|------------|--------------|----------|
+| Landscape HD | `"landscape"` | 2160×1080 | 2:1 | YouTube, presentations |
+| Instagram Portrait | `"instagram"` | 1080×1350 | 4:5 | Instagram posts |
+| Reels/Shorts | `"reels"` | 1080×1920 | 9:16 | Instagram Reels, YouTube Shorts, TikTok |
+
+Example:
+```json
+{
+  "videoFormat": "reels",
+  ...
+}
+```
 
 
 
