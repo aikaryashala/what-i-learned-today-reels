@@ -1,46 +1,75 @@
 {
-  "introTitle": "Coding Bridge Course",
-  "introCaption": "June 5th 2023",
-  "introduction": "Your first 3 steps",
+  "introTitle": "Bootcamp by AI Karyashala",
+  "introCaption": "Feb 7th-8th, 2026",
+  "introduction": "The hands on activites...",
   "scrollTextTitle": "Here's all the topics that will be covered!",
-  "conclusion": "Waiting for the first class",
-  "conclusionCaption": "on June 5th 2023",
-  "endingTitle": "Coding Bridge Course",
-  "endingCaption": "June 5th 2023",
+  "conclusion": "Waiting for the first session",
+  "conclusionCaption": "on Feb 7th 2026",
+  "endingTitle": "Bootcamp at KIET",
+  "endingCaption": "Feb 7th-8th, 2026",
 
   "backgroundMusic": "sankranthi.mp3",
 
   "topChanges": [
     {
-      "title": "Open https://bridge.e42.dev",
-      "description": "Open our course website"
+      "title": "Algorithm Principles",
+      "description": "Principles that systematically guide the development of higher-quality code through continued practice."
     },
     {
-      "title": "Type command 'code'",
-      "description": "To open the replit website"
+      "title": "Code Understanding AI Prompt Template",
+      "description": "Template to use to understand any peice of code using AI."
     },
     {
-      "title": "Now signup using google account",
-      "description": "create replit account"
+      "title": "AI Tools",
+      "description": "suno.com, notebookLM, elevenlabs, claude, gamma.app"
+    },
+    {
+      "title": "Profile Website Creation",
+      "description": "Using HTML tags and Github Pages."
+    },
+    {
+      "title": "Linux Basic Command",
+      "description": "Basic commands and usage of the command line interface."
+    },
+    {
+      "title": "Contact QR Code Generator",
+      "description": "Generate your contact QR code using python script."
+    },
+    {
+      "title": "Python Programming Basics",
+      "description": "I/O, Control Flow"
+    },
+    {
+      "title": "Python Debugging",
+      "description": "Debugging Python code using 'pdb' in command line."
+    },
+    {
+      "title": "System Internals",
+      "description": "Understanding how systems work under the hood."
+    },
+    {
+      "title": "Web APIs",
+      "description": "DNS, Web Request, Client & Server model."
     }
   ],
 
   "allChanges": [
-    "Using the commands",
-    "Creating new commands",
-    "Variable",
-    "function parameters",
-    "function returns sankya or gadidha_guddu",
-    "main function, from which everything starts. Return program_execution_status.",
-    "Control flow",
-    "Data Flow",
-    "function, declaration, definition, calling. // new commands",
-    "control statements, if-else, while, for, break",
-    "Arithmetic operations, assignment.",
-    "relational operators",
-    "Errors.",
-    "Compiler, code, executable.",
-    "Header files, distribution of code.",
-    "Reading from user"
+  "Algorithm Principles",
+  "suno.ai",
+  "NotebookLM (Google)",
+  "ElevenLabs (Text to Audio)",
+  "Claude (Code demo)",
+  "Gamma.app",
+  "AI Prompt Templates",
+  "Contact QR generation",
+  "Directory exploration and deletion",
+  "Basic Linux commands",
+  "Profile creation",
+  "Python Debugging",
+  "Request and response body",
+  "Call stack",
+  "Error codes",
+  "File to program execution flow",
+  "Practical AI templates"
   ]
 }
