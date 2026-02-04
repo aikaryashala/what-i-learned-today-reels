@@ -16,7 +16,6 @@ import FadingOutAudio from "./sequences/FadingOutAudio";
 import {IntroTitle, IntroCaption, Introduction, Conclusion, ConclusionCaption, EndingTitle, EndingCaption} from "../../script/VideoContent" ;
 const parsedPropsSchemaBase = {
   topChanges: z.array(z.object({ title: z.string(), description: z.string() })),
-  allChanges: z.array(z.string()),
 };
 const parsedPropsSchema = z.object(parsedPropsSchemaBase);
 export type ParsedPropsSchema = z.infer<typeof parsedPropsSchema>;
@@ -44,10 +43,7 @@ const colorSetClasses = [
 ] satisfies [string, string][];
 
 const BaseComp = ({
-  repositorySlug,
-  releaseTag,
   topChanges,
-  allChanges,
 }: z.infer<typeof baseCompSchema> & HTMLAttributes<HTMLDivElement>) => {
   const { fps } = useVideoConfig();
 

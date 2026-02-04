@@ -23,7 +23,7 @@ const inputProps = getInputProps() as BaseCompProps;
 export default function Comp() {
   const [handle] = useState(() => delayRender());
   const [durationInFrames, setDurationInFrames] = useState(30 * 3);
-  const { topChanges, allChanges } = useMemo((): ParsedPropsSchema => {
+  const { topChanges } = useMemo((): ParsedPropsSchema => {
     const parsed = parse(
       inputProps.Content ?? Content
     ) as unknown as ParsedPropsSchema;
@@ -65,7 +65,6 @@ export default function Comp() {
           repositorySlug: "Checking", // unused data
           releaseTag: "30/1/23", // unused data
           topChanges,
-          allChanges,
           Content,
           // topChanges: [
           //   {
