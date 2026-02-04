@@ -35,12 +35,6 @@ Edit the `script/content.json` file to customize your video:
     { "title": "Topic 1", "description": "Description of topic 1" },
     { "title": "Topic 2", "description": "Description of topic 2" },
     { "title": "Topic 3", "description": "Description of topic 3" }
-  ],
-
-  "allChanges": [
-    "List item 1",
-    "List item 2",
-    "List item 3"
   ]
 }
 ```
@@ -54,7 +48,6 @@ Edit the `script/content.json` file to customize your video:
 | `introCaption` | Subtitle shown below intro title |
 | `introduction` | Text before main content |
 | `topChanges` | Featured items (each gets its own animated slide) |
-| `allChanges` | Scrolling list of all items |
 | `backgroundMusic` | Audio file name (place in `public/` folder) |
 | `conclusion` | Closing message |
 | `endingTitle` | Final screen title |

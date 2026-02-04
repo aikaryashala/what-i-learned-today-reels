@@ -20,13 +20,9 @@ export const BackgroundMusic = staticFile(content.backgroundMusic);
 
 // Structured content for video sequences
 export const topChanges = content.topChanges;
-export const allChanges = content.allChanges;
 
 // For backward compatibility with Root.tsx YAML parsing
 const Content = `topChanges:
-${content.topChanges.map(c => `- title: ${c.title}\n  description: ${c.description}`).join('\n')}
-
-allChanges:
-${content.allChanges.map(c => `- ${c}`).join('\n')}`;
+${content.topChanges.map(c => `- title: ${c.title}\n  description: ${c.description}`).join('\n')}`;
 
 export default Content;

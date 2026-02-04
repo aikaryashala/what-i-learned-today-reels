@@ -6,7 +6,6 @@ import { loadFont as loadInterFont } from "@remotion/google-fonts/Inter";
 import SlidingDoors from "./components/SlidingDoors";
 import TextFadeInFromBottom from "./components/TextFadeInFromBottom";
 import GridPattern from "./components/GridPattern";
-import AllThingsWeAddedSequence from "./sequences/AllOtherStuff";
 import FadeOutExit from "./components/FadeOutExit";
 import Star6Sided from "./assets/Star6Sided";
 import Star4Sided from "./assets/Star4Sided";

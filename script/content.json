@@ -53,25 +53,5 @@
       "title": "Web APIs",
       "description": "DNS, Web Request, Client & Server model."
     }
-  ],
-
-  "allChanges": [
-  "Algorithm Principles",
-  "suno.ai",
-  "NotebookLM (Google)",
-  "ElevenLabs (Text to Audio)",
-  "Claude (Code demo)",
-  "Gamma.app",
-  "AI Prompt Templates",
-  "Contact QR generation",
-  "Directory exploration and deletion",
-  "Basic Linux commands",
-  "Profile creation",
-  "Python Debugging",
-  "Request and response body",
-  "Call stack",
-  "Error codes",
-  "File to program execution flow",
-  "Practical AI templates"
   ]
 }
