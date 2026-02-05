@@ -20,14 +20,14 @@ const parsedPropsSchemaBase = {
 const parsedPropsSchema = z.object(parsedPropsSchemaBase);
 export type ParsedPropsSchema = z.infer<typeof parsedPropsSchema>;
 
-export const baseCompSchema = z.object({
+export const aikVideoCompSchema = z.object({
   repositorySlug: z.string(),
   releaseTag: z.string(),
   Content: z.string(),
 
   ...parsedPropsSchemaBase,
 });
-export type BaseCompProps = z.infer<typeof baseCompSchema>;
+export type AIKVideoCompProps = z.infer<typeof aikVideoCompSchema>;
 
 loadInterFont("normal", {
   weights: ["400", "500", "600", "700", "800", "900"],
@@ -42,9 +42,9 @@ const colorSetClasses = [
   ["text-white", "bg-fuchsia-600"],
 ] satisfies [string, string][];
 
-const BaseComp = ({
+const AIKVideoComp = ({
   topicsLearned,
-}: z.infer<typeof baseCompSchema> & HTMLAttributes<HTMLDivElement>) => {
+}: z.infer<typeof aikVideoCompSchema> & HTMLAttributes<HTMLDivElement>) => {
   const { fps } = useVideoConfig();
 
   return (
@@ -190,4 +190,4 @@ const BaseComp = ({
   );
 };
 
-export default BaseComp;
+export default AIKVideoComp;
