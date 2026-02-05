@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preview": "BROWSER=0 remotion preview remotion/index.ts",
+    "preview": "BROWSER=none remotion preview remotion/index.ts",
     "render": "remotion render remotion/index.ts basecomp",
     "generate-yaml": "npx ts-node utils/create-release-notes-yaml.ts",
     "build": "tsc",
