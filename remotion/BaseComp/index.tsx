@@ -57,7 +57,7 @@ const BaseComp = ({
         <Series.Sequence
           durationInFrames={fps * 1.5}
           className="text-white"
-          name="aikaryashala"
+          name={"AIK: Intro Title"}
         > {/* name is not used */}
           <SlidingDoors>
             <First className="bg-black text-center">
@@ -70,7 +70,7 @@ const BaseComp = ({
           durationInFrames={fps * 1.5}
           offset={-20}
           className="text-white"
-          name={"13.4.2"}
+          name={"AIK: Intro Caption"}
         > {/* name is not used */}
           <SlidingDoors>
             <First className="bg-blue-500 text-center">
@@ -83,7 +83,7 @@ const BaseComp = ({
           durationInFrames={fps * 3}
           offset={-20}
           className="text-black"
-          name={"Vercel/NextJS | 13.4.2"}
+          name={"AIK: Intro Title and Caption"}
         >     {/* name is not used */ }
           <SlidingDoors>
             <First className="bg-white text-center">
@@ -99,7 +99,7 @@ const BaseComp = ({
           durationInFrames={fps * 3}
           offset={-20}
           className="text-white"
-          name={"Let's code"}
+          name={"AIK: Topics Learned Introduction"}
         > {/* name is not used */}
           <SlidingDoors>
             <First className="bg-black text-center">
@@ -121,7 +121,7 @@ const BaseComp = ({
               colorSetClasses[i % colorSetClasses.length][0],
               "z-20"
             )}
-            name={`Topics Learned - ${i + 1}`}
+            name={`AIK: Topics Learned - ${i + 1}`}
           >
             <ConditionalWrap
               condition={
@@ -172,7 +172,7 @@ const BaseComp = ({
           durationInFrames={fps * 4}
           offset={-20}
           className="text-black"
-          name={"aikaryashala"}
+          name={"AIK: Ending Title and Caption"}
         > {/* name is not used */}
           <FadeOutExit>
             <SlidingDoors>
