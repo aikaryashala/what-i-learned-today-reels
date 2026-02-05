@@ -155,8 +155,8 @@ const AIKVideoComp = ({
                         noExit
                         className="gap-10 flex flex-col items-center -mb-20"
                       >
-                        <h1 className="text-8xl font-black">{change.title}</h1>
-                        <p className="text-4xl font-medium opacity-60 leading-normal w-3/4">
+                        <h1 className="text-[120px] font-black leading-tight">{change.title}</h1>
+                        <p className="text-[45px] font-medium opacity-60 leading-normal w-3/4">
                           {change.description}
                         </p>
                       </TextFadeInFromBottom>
