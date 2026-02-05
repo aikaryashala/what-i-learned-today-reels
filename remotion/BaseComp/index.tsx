@@ -13,7 +13,7 @@ import clsx from "clsx" ;
 import ConditionalWrap from "./components/ConditionalWrap";
 import SlideExitToTop from "./components/SlideExitToTop";
 import FadingOutAudio from "./sequences/FadingOutAudio";
-import {IntroTitle, IntroCaption, Introduction, Conclusion, ConclusionCaption, EndingTitle, EndingCaption} from "../../script/VideoContent" ;
+import {IntroTitle, IntroCaption, Introduction, EndingTitle, EndingCaption} from "../../script/VideoContent" ;
 const parsedPropsSchemaBase = {
   topChanges: z.array(z.object({ title: z.string(), description: z.string() })),
 };
@@ -57,7 +57,7 @@ const BaseComp = ({
         <Series.Sequence
           durationInFrames={fps * 1.5}
           className="text-white"
-          name="enhance42"
+          name="aikaryashala"
         > {/* name is not used */}
           <SlidingDoors>
             <First className="bg-black text-center">
@@ -169,32 +169,10 @@ const BaseComp = ({
         ))}
 
         <Series.Sequence
-          durationInFrames={fps * 3}
-          offset={-30}
-          className="z-0"
-          name="Checkout the latest release"
-        >
-          <Series.Sequence
-            durationInFrames={fps * 1.5}
-            offset={-20}
-            className="text-white"
-          >
-            <SlidingDoors>
-              <First className="bg-blue-500 text-white flex flex-col items-center justify-center text-center">
-                <h1 className="text-9xl font-black">
-                  {Conclusion}
-                </h1>
-                <p className="text-5xl mt-10 text-white/70">{ConclusionCaption}</p>
-              </First>
-            </SlidingDoors>
-          </Series.Sequence>
-        </Series.Sequence>
-
-        <Series.Sequence
           durationInFrames={fps * 4}
           offset={-20}
           className="text-black"
-          name={"enhance42"}
+          name={"aikaryashala"}
         > {/* name is not used */}
           <FadeOutExit>
             <SlidingDoors>

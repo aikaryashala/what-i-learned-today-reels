@@ -27,8 +27,6 @@ Edit the `script/content.json` file to customize your video:
   "introTitle": "Your Video Title",
   "introCaption": "Subtitle or Date",
   "introduction": "Introduction text",
-  "conclusion": "Closing message",
-  "conclusionCaption": "Closing subtitle",
   "endingTitle": "End screen title",
   "endingCaption": "End screen subtitle",
 
@@ -52,7 +50,6 @@ Edit the `script/content.json` file to customize your video:
 | `introduction` | Text before main content |
 | `topChanges` | Featured items (each gets its own animated slide) |
 | `backgroundMusic` | Audio file name (place in `public/` folder) |
-| `conclusion` | Closing message |
 | `endingTitle` | Final screen title |
 
 ### Notes:
