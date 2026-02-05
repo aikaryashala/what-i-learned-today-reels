@@ -9,7 +9,7 @@
 
   "backgroundMusic": "sankranthi.mp3",
 
-  "topChanges": [
+  "topicsLearned": [
     {
       "title": "Algorithm Principles",
       "description": "Principles that systematically guide the development of higher-quality code through continued practice."

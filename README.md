@@ -32,7 +32,7 @@ Edit the `script/content.json` file to customize your video:
 
   "backgroundMusic": "your-audio.mp3",
 
-  "topChanges": [
+  "topicsLearned": [
     { "title": "Topic 1", "description": "Description of topic 1" },
     { "title": "Topic 2", "description": "Description of topic 2" },
     { "title": "Topic 3", "description": "Description of topic 3" }
@@ -48,12 +48,12 @@ Edit the `script/content.json` file to customize your video:
 | `introTitle` | Main title shown at video start |
 | `introCaption` | Subtitle shown below intro title |
 | `introduction` | Text before main content |
-| `topChanges` | Featured items (each gets its own animated slide) |
+| `topicsLearned` | Featured items (each gets its own animated slide) |
 | `backgroundMusic` | Audio file name (place in `public/` folder) |
 | `endingTitle` | Final screen title |
 
 ### Notes:
-- Adding more items to `topChanges` automatically increases video length
+- Adding more items to `topicsLearned` automatically increases video length
 - Place audio files in the `public/` folder
 - Run `pnpm render` after editing to generate the video
 

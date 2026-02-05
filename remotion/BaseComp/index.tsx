@@ -15,7 +15,7 @@ import SlideExitToTop from "./components/SlideExitToTop";
 import FadingOutAudio from "./sequences/FadingOutAudio";
 import {IntroTitle, IntroCaption, Introduction, EndingTitle, EndingCaption} from "../../script/VideoContent" ;
 const parsedPropsSchemaBase = {
-  topChanges: z.array(z.object({ title: z.string(), description: z.string() })),
+  topicsLearned: z.array(z.object({ title: z.string(), description: z.string() })),
 };
 const parsedPropsSchema = z.object(parsedPropsSchemaBase);
 export type ParsedPropsSchema = z.infer<typeof parsedPropsSchema>;
@@ -43,7 +43,7 @@ const colorSetClasses = [
 ] satisfies [string, string][];
 
 const BaseComp = ({
-  topChanges,
+  topicsLearned,
 }: z.infer<typeof baseCompSchema> & HTMLAttributes<HTMLDivElement>) => {
   const { fps } = useVideoConfig();
 
@@ -112,7 +112,7 @@ const BaseComp = ({
           </SlidingDoors>
         </Series.Sequence>
 
-        {topChanges.map((change, i) => (
+        {topicsLearned.map((change, i) => (
           <Series.Sequence
             durationInFrames={fps * 4}
             offset={-20}
@@ -121,12 +121,12 @@ const BaseComp = ({
               colorSetClasses[i % colorSetClasses.length][0],
               "z-20"
             )}
-            name={`Top Changes - ${i + 1}`}
+            name={`Topics Learned - ${i + 1}`}
           >
             <ConditionalWrap
               condition={
                 // Last one only
-                i === topChanges.length - 1
+                i === topicsLearned.length - 1
               }
               wrap={(children) => <SlideExitToTop>{children}</SlideExitToTop>}
             >

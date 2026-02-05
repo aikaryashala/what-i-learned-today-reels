@@ -16,10 +16,10 @@ export const EndingCaption = content.endingCaption;
 export const BackgroundMusic = staticFile(content.backgroundMusic);
 
 // Structured content for video sequences
-export const topChanges = content.topChanges;
+export const topicsLearned = content.topicsLearned;
 
 // For backward compatibility with Root.tsx YAML parsing
-const Content = `topChanges:
-${content.topChanges.map(c => `- title: ${c.title}\n  description: ${c.description}`).join('\n')}`;
+const Content = `topicsLearned:
+${content.topicsLearned.map(c => `- title: ${c.title}\n  description: ${c.description}`).join('\n')}`;
 
 export default Content;

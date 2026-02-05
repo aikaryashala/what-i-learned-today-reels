@@ -23,12 +23,12 @@ const inputProps = getInputProps() as BaseCompProps;
 export default function Comp() {
   const [handle] = useState(() => delayRender());
   const [durationInFrames, setDurationInFrames] = useState(30 * 3);
-  const { topChanges } = useMemo((): ParsedPropsSchema => {
+  const { topicsLearned } = useMemo((): ParsedPropsSchema => {
     const parsed = parse(
       inputProps.Content ?? Content
     ) as unknown as ParsedPropsSchema;
 
-    const duration = 92 * parsed.topChanges.length + 300;
+    const duration = 92 * parsed.topicsLearned.length + 300;
 
     setDurationInFrames(duration);
 
@@ -64,7 +64,7 @@ export default function Comp() {
         defaultProps={{
           repositorySlug: "Checking", // unused data
           releaseTag: "30/1/23", // unused data
-          topChanges,
+          topicsLearned,
           Content,
           // topChanges: [
           //   {
