@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 import { debug, getInput } from "@actions/core";
 
 const run = async () => {
-  const compositionId = "basecomp";
+  const compositionId = "aikvideocomp";
   const entry = "./remotion/index.ts";
 
   const openaiConfig = new Configuration({

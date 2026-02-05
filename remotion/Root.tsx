@@ -14,11 +14,11 @@ const VIDEO_DIMENSIONS = {
 } as const;
 
 const { width, height } = VIDEO_DIMENSIONS[videoFormat];
-import BaseComp, { ParsedPropsSchema, BaseCompProps } from "./BaseComp";
+import AIKVideoComp, { ParsedPropsSchema, AIKVideoCompProps } from "./AIKVideoComp";
 import { useMemo, useState } from "react";
 import { parse } from "yaml";
 
-const inputProps = getInputProps() as BaseCompProps;
+const inputProps = getInputProps() as AIKVideoCompProps;
 
 export default function Comp() {
   const [handle] = useState(() => delayRender());
@@ -46,7 +46,7 @@ export default function Comp() {
   return (
     <>
       <Composition
-        component={BaseComp}
+        component={AIKVideoComp}
         // component={() => <Video src={staticFile("/insp.mp4")} />}
         // component={() => (
         //   <AbsoluteFill className="flex-col gap-20 justify-center items-center text-white bg-black text-9xl w-full h-full">
@@ -60,7 +60,7 @@ export default function Comp() {
         fps={30}
         width={width}
         height={height}
-        id="basecomp"
+        id="aikvideocomp"
         defaultProps={{
           repositorySlug: "Checking", // unused data
           releaseTag: "30/1/23", // unused data
@@ -169,7 +169,7 @@ export default function Comp() {
               className="z-0 w-full h-full absolute inset-0"
             />
             <AbsoluteFill className="opacity-50">
-              <BaseComp className="relative z-10 opacity-50" />
+              <AIKVideoComp className="relative z-10 opacity-50" />
             </AbsoluteFill>
           </>
         )}

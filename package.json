@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "preview": "BROWSER=none remotion preview remotion/index.ts",
-    "render": "remotion render remotion/index.ts basecomp videos/my-learnings.mp4",
+    "render": "remotion render remotion/index.ts aikvideocomp videos/my-learnings.mp4",
     "generate-yaml": "npx ts-node utils/create-release-notes-yaml.ts",
     "build": "tsc",
     "format": "prettier --write '**/*.{ts,tsx}'",
